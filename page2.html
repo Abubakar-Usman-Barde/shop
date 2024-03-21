@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <section class="header">
+        <!-- nav ba start -->
+<nav>
+    <a href="#"><img src="./asset/logo.jpg" alt=""></a>
+    <div class="nav-link" id="navbar">
+        <p id="hide" class="spans"><img src="./asset/close.png" alt=""></p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Product</a></li>
+            <li><a href="contacts.html">contact</a></li>
+            <li id="buy"><a href="">Buy</a></li>
+        </ul>
+       
+    </div>
+    <span id="show" class="spans"><img src="./asset/showmenu.png" alt=""></span>
+</nav>
+
+<!-- nav bar end -->
+
+<!-- hero text start -->
+
+<div class="abouttex-box">
+    <h1>Choose & Buy</h1>
+    <p>Buy More And Get Up To 20% Off</p>
+</div>
+ <!-- hero text end -->
+</section>
+
+<section class="productdetail" id="padding">
+    <div class="single-pro-image">
+        <img src="./asset/bag9.jfif" width="100%" id="mainimage" alt="">
+         
+        <div class="small-image-group">
+            <div class="small-image-col">
+                <img src="./asset/bag9.jfif"  width="100%" class="small-image" alt="">
+            </div>
+
+            <div class="small-image-col">
+                <img src="./asset/bag3.jfif"  width="100%" class="small-image" alt="">
+            </div>
+
+            <div class="small-image-col">
+                <img src="./asset/bag4.jfif"  width="100%" class="small-image" alt="">
+            </div>
+
+            <div class="small-image-col">
+                <img src="./asset/bag5.jfif"  width="100%" class="small-image" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="single-product-detail">
+        <h5>Lagos lace</h5>
+        <h4>ladies Fashion Lace</h4>
+        <h2>$17,000</h2>
+        <select>
+            <option>select color</option>
+            <option>sky blue</option>
+            <option>maroon</option>
+            <option>rose pink</option>
+            <option>green</option>
+        </select>
+        <input type="number" value="1">
+        <button>Add to cart</button>
+        <h4>product details</h4>
+        <span>Barde blouse Is The Big Company In Biu LG That Provide A Higher Quality Of Diffrent Products And SErvices In Demand, We Also Deliver Our Product To Our Customers Destination In Nigeria In Time. You Contact Us Directly To Discuss On Many Product Not Listed In the Website.</span>
+    </div>
+</section>
+    
+
+    <!-- product start -->
+
+   
+
+    <section class="newsletter" id="section-marging">
+        <div class="tex">
+            <h4>Our News Letter</h4>
+            <p> Get Emaial Update On Our Lettes Offers By Signing Up</p>
+        </div>
+        <div class="form">
+         <input type="text" placeholder="your email address">
+         <button>SignUp</button>
+        </div>
+    </section>
+
+    
+
+    <footer id="padding">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Adress:</strong> layin Abuja,Biu Main Market</p>
+            <p><strong>Phone:</strong> +234 8086394979,+234 8038279907</p>
+            <p><strong>Hours:</strong> 8:00AM-6:00PM MON-SUN</p>
+            <div class="follow">
+                <a href=""><img src="./asset/facebook.jpg" alt=""></a>
+                <a href=""><img src="./asset/twitter.jpg" alt=""></a>
+                <a href=""><img src="./asset/whatssap.jpg" alt="" height="28px"></a>
+                <a href=""><img src="./asset/youtube.jpg" alt="" height="30px"></a>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivary Information</a>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="./asset/app-store.jpg" alt="">
+                <img src=".//asset/google-pla.jpg" alt="" height="58px">
+            </div>
+            <p>Secure Payment Gateway</p>
+            <img src="./asset/paycard1.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>CopyRight2024 @ Barde Technology<a href=""><br>
+            Design By| Abubakar Usman Barde</a></p>
+        </div>
+    </footer>
+    
+
+
+    <script>
+        ///=======singlepagescript==========
+        var mainimage = document.getElementById("mainimage");
+        var smallimage = document.getElementsByClassName("small-image");
+
+        smallimage[0].onclick = function(){
+            mainimage.src = smallimage[0].src;
+        }
+
+        smallimage[1].onclick = function(){
+            mainimage.src = smallimage[1].src;
+        }
+
+        smallimage[2].onclick = function(){
+            mainimage.src = smallimage[2].src;
+        }
+
+        smallimage[3].onclick = function(){
+            mainimage.src = smallimage[3].src;
+        }
+
+        //=============index script================.///
+
+        let navbar = document.getElementById("navbar");
+        let show = document.getElementById("show");
+        let hide = document.getElementById("hide");
+
+        show.onclick= function(){
+            navbar.style.right="0";
+        };
+
+        hide.onclick = function(){
+            navbar.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
